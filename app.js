@@ -1,13 +1,15 @@
 const express = require('express');
 const app = express();
 const Joi = require('@hapi/joi');
-
+const path = require('path')
 app.use(express.json());
 
 app.get('/', (req,res) => {
-    // res.sendFile(path.join(__dirname, 'index.html'))
-    // res.send('Welcome to Daily Code Buffer in Heroku Auto Deployments!!');
-    res.send('index.html')
+    res.sendFile(path.join(__dirname, '/build/index.html'), function (err) {
+        if (err) {
+          res.status(500).send(err)
+        }
+    })
 })
 
 app.get('/test', (req,res) => {
