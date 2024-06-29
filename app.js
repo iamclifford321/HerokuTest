@@ -5,8 +5,8 @@ const Joi = require('@hapi/joi');
 app.use(express.json());
 
 app.get('/', (req,res) => {
-    res.sendFile('./index.html')
-    // res.send('Welcome to Daily Code Buffer in Heroku Auto Deployments!!');
+    // res.sendFile('./index.html')
+    res.send('Welcome to Daily Code Buffer in Heroku Auto Deployments!!');
 })
 
 app.get('/test', (req,res) => {
