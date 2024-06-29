@@ -4,6 +4,7 @@ const Joi = require('@hapi/joi');
 const path = require('path')
 app.use(express.json());
 
+
 app.get('/', (req,res) => {
     console.log(path.join(__dirname, '/index.html'));
     res.sendFile(path.join(__dirname, '/index.html'), function (err) {
