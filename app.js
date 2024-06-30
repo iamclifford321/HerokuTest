@@ -14,10 +14,6 @@ app.get('/', (req,res) => {
     })
 })
 
-app.get('/test', (req,res) => {
-    res.send('testset');
-});
-
 app.post('/execute', (req, res) => {
     res.status(500).send(err);
 });
