@@ -18,5 +18,12 @@ app.get('/test', (req,res) => {
     res.send('testset');
 });
 
+app.post('/execute', (req, res) => {
+    res.status(500).send(err);
+});
+app.post('/publish', (req, res) => {
+    res.status(500).send(err);
+});
+
 const port = process.env.PORT || '5000';
 app.listen(port, () => console.log(`Server started on Port ${port}`));
