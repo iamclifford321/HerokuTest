@@ -11,21 +11,21 @@
       }
     },
     "arguments": { 
-      "execute": {
-        "inArguments": [
-          {
-            "Email": "{{Contact.Attribute.JourneyEntrySource.Email}}"
-          },
-          {
-            "Name": "{{Contact.Attribute.JourneyEntrySource.Name}}"
-          }
-        ],
-        "outArguments": [
-          {
-            "foundSignupDate": ""
-          }
-        ],
-        "url": "https://sms-es-7cd4f4719c4d.herokuapp.com/execute"
-      }
+        "execute": {
+            "inArguments": [
+            {
+                "Email": "{{Contact.Attribute.JourneyEntrySource.Email}}"
+            },
+            {
+                "Name": "{{Contact.Attribute.JourneyEntrySource.Name}}"
+            }
+            ],
+            "outArguments": [
+            {
+                "foundSignupDate": ""
+            }
+            ],
+            "url": "https://sms-es-7cd4f4719c4d.herokuapp.com/execute"
+        }
     }
   }
